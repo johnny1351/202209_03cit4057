@@ -14,7 +14,7 @@ def get_total_weird(fruits, total):
 def main():
     total = 0
     num_orange = 6
-    num_apple = 10
+    num_apple = new_func()
     list = [num_apple, num_orange]
     total1 = get_total(list, total)
     total1_compare = get_total(list, total)
@@ -22,6 +22,10 @@ def main():
     total2_compare = get_total_weird(list, total)
     print("total1 = {}, total1_compare = {}".format(total1, total1_compare))
     print("total2 = {}, total2_compare = {}".format(total2, total2_compare))
+
+def new_func():
+    num_apple = 10
+    return num_apple
 
 if __name__ == "__main__":
     main()
