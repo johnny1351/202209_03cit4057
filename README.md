@@ -1,4 +1,9 @@
+![](https://github.com/edugarrick/202209_03cit4057/blob/main/github_banner.gif)
+
+# 03CIT4057 Introduction of Computer Programming
+
 ### Communication
+
 
 We have a dedicate Discord Server for this course.
 Please install Discord, create your account and then click the following link.
