@@ -1,0 +1,36 @@
+def encryption():
+    str_raw = input("text：")
+    y = int(input("move ："))
+    str_change = str_raw.lower()
+    str_text = list(str_change)
+    str_text_encry = str_text
+    x = 0
+    while x < len(str_text):
+        if ord(str_text[x]) < 123-y:
+            str_text_encry[x] = chr(ord(str_text[x]) + y)
+        else:
+            str_text_encry[x] = chr(ord(str_text[x]) + y - 26)
+        x = x+1
+    print ("answer is："+"".join(str_text_encry))
+def decryption():
+    y = int(input("enter displacement value："))
+    str_raw = input("enter the ciphertext：")   
+    str_change = str_raw.lower()
+    str_text = list(str_change)
+    str_text_decry = str_text
+    x = 0
+    while x < len(str_text):
+        if ord(str_text[x]) >= 97+y: str_text_decry[x] = chr(ord(str_text[x]) - y)
+        else:str_text_decry[x] = chr(ord(str_text[x]) + 26 - y)
+        x = x+1
+    print ("answer is："+"".join(str_text_decry))
+while True:
+    print ("1. encrypt")
+    print ("2. decode")
+    choice = input("please choose：")
+    if choice == "1":
+        encryption()
+    elif choice == "2":
+        decryption()
+    else:
+        print ("error！")
